@@ -69,3 +69,4 @@ fi
 ./gradlew publishShadowPublicationToStagingRepository -Dopensearch.version=$VERSION -Dbuild.snapshot=$SNAPSHOT -Dbuild.version_qualifier=$QUALIFIER
 mkdir -p $OUTPUT/maven/org/opensearch
 cp -r ./build/local-staging-repo/org/opensearch/. $OUTPUT/maven/org/opensearch
+./gradlew --stop
